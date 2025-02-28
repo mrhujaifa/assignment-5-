@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <!-- google cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- taildwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F4F7FF]">
+    <div class="container m-auto">
+      <!-- nav bar -->
+      <nav
+        class="flex items-center justify-between p-5 my-3 bg-white rounded-xl"
+      >
+        <div class="flex items-center gap-3">
+          <img src="/assets/logo.png" alt="" />
+          <span class="text-[35px]"
+            >Dev <span class="font-bold">Board</span></span
+          >
+        </div>
+        <div class="flex items-center gap-14">
+          <div class="flex items-center gap-3 bg-[#F4F7FF] px-4 rounded-xl">
+            <img
+              src="/assets/checkbox.png
+                    "
+              alt=""
+            />
+            <span class="text-[32px] font-bold">23</span>
+          </div>
+          <div>
+            <img src="assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero area -->
+      <div class="grid grid-cols-12 gap-4">
+        <!-- hero left -->
+        <div class="grid col-span-9 gap-20 bg-white p-6 rounded-xl">
+            
+          <div class="grid grid-cols-10 gap-4">
+            <div class=" col-span-3 flex items-center gap-5 p-5 bg-[#F4F7FF] rounded-xl">
+            <div class="bg-white p-3 rounded-full">
+              <img src="/assets/checkbox.png" alt="" />
+            </div>
+            <span class="text-[16px]"
+              >Task Assigned
+              <p class="text-[32px] font-bold">05</p></span
+            >
+          </div>
+
+          <div
+            class="flex items-center gap-7 rounded-2xl text-[24px] text-white py-6 px-10 col-span-4"
+            style="
+              background: linear-gradient(
+                130.7deg,
+                rgb(55, 82, 253) 0.419%,
+                rgb(108, 127, 250) 52.66%,
+                rgb(155, 168, 248) 99.733%
+              );
+            "
+          >
+            <img src="/assets/board.png" alt="" />
+            <p>
+              Discover Something <br />
+              New Today!
+            </p>
+          </div>
+          <div
+            class="flex items-center gap-4 py-8 px-10 rounded-2xl bg-[#F4F7FF] col-span-3"
+          >
+            <img src="assets/calender.png" alt="" />
+            <span
+              >Wed, <br />
+              Jul 28 2025</span
+            >
+          </div>
+          </div>
+
+
+          <div class="mx-auto p-4 grid grid-cols-3 gap-4">
+            <!-- card-1  -->
+          <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <p
+              class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
+            >
+              ShopEase
+            </p>
+            <h1 class="mt-4 mb-4 font-medium text-xl">
+              Fix Mobile Button Issue
+            </h1>
+            <p
+              class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
+            >
+              Debug using Chrome DevTools, check for overlapping
+            </p>
+            <hr class="border-b border-dashed mt-4 border-gray-300" />
+            <!--Card footer -->
+            <div class="flex justify-between">
+              <div class="mt-4">
+                <p class="text-[14px] text-[#00303C]">Deadline</p>
+                <p class="text-[16px] text-[#00303C] font-medium">
+                  21 March 2025
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <button
+                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-2  -->
+          <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <p
+              class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
+            >
+              ShopEase
+            </p>
+            <h1 class="mt-4 mb-4 font-medium text-xl">
+              Fix Mobile Button Issue
+            </h1>
+            <p
+              class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
+            >
+              Debug using Chrome DevTools, check for overlapping
+            </p>
+            <hr class="border-b border-dashed mt-4 border-gray-300" />
+            <!--Card footer -->
+            <div class="flex justify-between">
+              <div class="mt-4">
+                <p class="text-[14px] text-[#00303C]">Deadline</p>
+                <p class="text-[16px] text-[#00303C] font-medium">
+                  21 March 2025
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <button
+                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-3  -->
+          <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <p
+              class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
+            >
+              ShopEase
+            </p>
+            <h1 class="mt-4 mb-4 font-medium text-xl">
+              Fix Mobile Button Issue
+            </h1>
+            <p
+              class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
+            >
+              Debug using Chrome DevTools, check for overlapping
+            </p>
+            <hr class="border-b border-dashed mt-4 border-gray-300" />
+            <!--Card footer -->
+            <div class="flex justify-between">
+              <div class="mt-4">
+                <p class="text-[14px] text-[#00303C]">Deadline</p>
+                <p class="text-[16px] text-[#00303C] font-medium">
+                  21 March 2025
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <button
+                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-4  -->
+          <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <p
+              class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
+            >
+              ShopEase
+            </p>
+            <h1 class="mt-4 mb-4 font-medium text-xl">
+              Fix Mobile Button Issue
+            </h1>
+            <p
+              class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
+            >
+              Debug using Chrome DevTools, check for overlapping
+            </p>
+            <hr class="border-b border-dashed mt-4 border-gray-300" />
+            <!--Card footer -->
+            <div class="flex justify-between">
+              <div class="mt-4">
+                <p class="text-[14px] text-[#00303C]">Deadline</p>
+                <p class="text-[16px] text-[#00303C] font-medium">
+                  21 March 2025
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <button
+                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- card-5  -->
+          <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <p
+              class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
+            >
+              ShopEase
+            </p>
+            <h1 class="mt-4 mb-4 font-medium text-xl">
+              Fix Mobile Button Issue
+            </h1>
+            <p
+              class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
+            >
+              Debug using Chrome DevTools, check for overlapping
+            </p>
+            <hr class="border-b border-dashed mt-4 border-gray-300" />
+            <!--Card footer -->
+            <div class="flex justify-between">
+              <div class="mt-4">
+                <p class="text-[14px] text-[#00303C]">Deadline</p>
+                <p class="text-[16px] text-[#00303C] font-medium">
+                  21 March 2025
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <button
+                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card-6  -->
+          <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <p
+              class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
+            >
+              ShopEase
+            </p>
+            <h1 class="mt-4 mb-4 font-medium text-xl">
+              Fix Mobile Button Issue
+            </h1>
+            <p
+              class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
+            >
+              Debug using Chrome DevTools, check for overlapping
+            </p>
+            <hr class="border-b border-dashed mt-4 border-gray-300" />
+            <!--Card footer -->
+            <div class="flex justify-between">
+              <div class="mt-4">
+                <p class="text-[14px] text-[#00303C]">Deadline</p>
+                <p class="text-[16px] text-[#00303C] font-medium">
+                  21 March 2025
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <button
+                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <!-- hero right side  -->
+        <div class=" grid col-span-3 bg-white px-20 py-10 rounded-2xl">
+          <div class="">
+            <div class="">
+              <div class="flex items-center justify-center gap-3">
+                <img class="text-center" src="assets/activity.png" alt="" />
+                <p class="text-xl text-center">Activity Log</p>
+              </div>
+              <div class="flex justify-center mt-4">
+                <button
+                  class="px-10 py-2 text-center rounded-xl text-white bg-blue-600"
+                >
+                  Clear History
+                </button>
+              </div>
+            </div>
+
+            <!-- message -->
+            <div class="flex justify-center p-3 bg-[#F4F7FF] rounded-2xl mt-5">
+              <p>
+                You have Complete The Task Add <br />
+                Dark Mode at
+                <span>12:48:15 PM</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
