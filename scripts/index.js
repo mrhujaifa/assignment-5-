@@ -18,7 +18,7 @@ for (let i = 0; i < completedAllBtn.length; i++) {
 
     // Button Disabled code
     allBtn.setAttribute("disabled", "true");
-    allBtn.classList.add("disabled:bg-gray-200");
+    allBtn.classList.add("disabled:bg-gray-100");
 
     // count compeleted task
     convartedAssignedTask--;
@@ -35,12 +35,17 @@ for (let i = 0; i < completedAllBtn.length; i++) {
     let allCardTitle = document.querySelectorAll(".cardTitle");
     let cardTitle = allCardTitle[i].innerText;
 
+    let courentDate = new Date() 
+    let courentTime = courentDate.toLocaleTimeString()
+    
+    
+
     let history = document.getElementById("history");
     let div = document.createElement("div");
 
     div.innerHTML = `
       <div class="flex justify-center p-3 bg-[#F4F7FF] rounded-2xl mt-5">
-        You have Complete The Task ${cardTitle} at 12:48:15 PM      
+        You have Complete The Task ${cardTitle} at ${courentTime}      
       </div>
     `;
 
@@ -48,8 +53,12 @@ for (let i = 0; i < completedAllBtn.length; i++) {
   });
 }
 
+// clear historoy
 let clearHistory = document.getElementById("clearHistory");
 
 clearHistory.addEventListener("click", function () {
   document.getElementById("history").innerHTML = "";
 });
+
+
+
