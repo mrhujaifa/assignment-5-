@@ -14,7 +14,7 @@
     <!-- taildwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#F4F7FF]">
+  <body id="body" class="bg-[#F4F7FF]">
     <div class="container m-auto">
       <!-- nav bar -->
       <nav
@@ -26,16 +26,16 @@
             >Dev <span class="font-bold">Board</span></span
           >
         </div>
-        <div class="flex items-center gap-14">
+        <div class="flex items-center gap-14 ">
           <div class="flex items-center gap-3 bg-[#F4F7FF] px-4 rounded-xl">
             <img
               src="/assets/checkbox.png
                     "
               alt=""
             />
-            <span class="text-[32px] font-bold">23</span>
+            <span id="mainCountTaskCompleted" class="text-[32px] font-bold">23</span>
           </div>
-          <div>
+          <div id="themeColor">
             <img src="assets/theme-btn.png" alt="" />
           </div>
         </div>
@@ -51,9 +51,9 @@
             <div class="bg-white p-3 rounded-full">
               <img src="/assets/checkbox.png" alt="" />
             </div>
-            <span class="text-[16px]"
+            <span  class="text-[16px]"
               >Task Assigned
-              <p class="text-[32px] font-bold">05</p></span
+              <p id="assignedTask" class="text-[32px] font-bold">6</p></span
             >
           </div>
 
@@ -78,7 +78,7 @@
             class="flex items-center gap-4 py-8 px-10 rounded-2xl bg-[#F4F7FF] col-span-3"
           >
             <img src="assets/calender.png" alt="" />
-            <span
+            <span id="date"
               >Wed, <br />
               Jul 28 2025</span
             >
@@ -88,13 +88,13 @@
 
           <div class="mx-auto p-4 grid grid-cols-3 gap-4">
             <!-- card-1  -->
-          <div class="bg-[#F4F7FF] p-4 rounded-xl">
+          <div  class= "  bg-[#F4F7FF] p-4 rounded-xl">
             <p
               class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
             >
               ShopEase
             </p>
-            <h1 class="mt-4 mb-4 font-medium text-xl">
+            <h1  class="cardTitle mt-4 mb-4 font-medium text-xl">
               Fix Mobile Button Issue
             </h1>
             <p
@@ -114,7 +114,7 @@
 
               <div class="mt-5">
                 <button
-                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                  class="completedAllBtn bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
                 >
                   Completed
                 </button>
@@ -127,15 +127,15 @@
             <p
               class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
             >
-              ShopEase
+            CloudSync
             </p>
-            <h1 class="mt-4 mb-4 font-medium text-xl">
-              Fix Mobile Button Issue
+            <h1 class="cardTitle mt-4 mb-4 font-medium text-xl">
+              Add Dark Mode
             </h1>
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+            Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
             </p>
             <hr class="border-b border-dashed mt-4 border-gray-300" />
             <!--Card footer -->
@@ -149,7 +149,7 @@
 
               <div class="mt-5">
                 <button
-                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                  class="completedAllBtn bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
                 >
                   Completed
                 </button>
@@ -162,15 +162,16 @@
             <p
               class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
             >
-              ShopEase
+            SwiftPay
             </p>
-            <h1 class="mt-4 mb-4 font-medium text-xl">
-              Fix Mobile Button Issue
+            <h1 class="cardTitle mt-4 mb-4 font-medium text-xl">
+              Optimize  Home page 
             </h1>
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
             </p>
             <hr class="border-b border-dashed mt-4 border-gray-300" />
             <!--Card footer -->
@@ -184,7 +185,7 @@
 
               <div class="mt-5">
                 <button
-                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                  class="completedAllBtn bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
                 >
                   Completed
                 </button>
@@ -197,15 +198,16 @@
             <p
               class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
             >
-              ShopEase
+            Meta
             </p>
-            <h1 class="mt-4 mb-4 font-medium text-xl">
-              Fix Mobile Button Issue
+            <h1 class="cardTitle mt-4 mb-4 font-medium text-xl">
+              Add new emoji 🤲
             </h1>
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
             </p>
             <hr class="border-b border-dashed mt-4 border-gray-300" />
             <!--Card footer -->
@@ -219,7 +221,7 @@
 
               <div class="mt-5">
                 <button
-                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                  class="completedAllBtn bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
                 >
                   Completed
                 </button>
@@ -232,15 +234,16 @@
             <p
               class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
             >
-              ShopEase
+            Google LLC
             </p>
-            <h1 class="mt-4 mb-4 font-medium text-xl">
-              Fix Mobile Button Issue
+            <h1 class="cardTitle mt-4 mb-4 font-medium text-xl">
+              Integrate OpenAI API 
             </h1>
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
             </p>
             <hr class="border-b border-dashed mt-4 border-gray-300" />
             <!--Card footer -->
@@ -254,7 +257,7 @@
 
               <div class="mt-5">
                 <button
-                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                  class= "completedAllBtn bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
                 >
                   Completed
                 </button>
@@ -266,15 +269,16 @@
             <p
               class="bg-white rounded-md px-5 py-2 text-[16px] w-3/6 font-light"
             >
-              ShopEase
+            Glassdoar
             </p>
-            <h1 class="mt-4 mb-4 font-medium text-xl">
-              Fix Mobile Button Issue
+            <h1 class="cardTitle mt-4 mb-4 font-medium text-xl">
+              Improve Job searching 
             </h1>
             <p
               class="bg-white rounded-md py-3 px-2 text-[16px] text-gray-500 font-light"
             >
-              Debug using Chrome DevTools, check for overlapping
+            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+            and ensure onClick works properly
             </p>
             <hr class="border-b border-dashed mt-4 border-gray-300" />
             <!--Card footer -->
@@ -288,7 +292,7 @@
 
               <div class="mt-5">
                 <button
-                  class="bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
+                  class="completedAllBtn bg-[#3752FD] hover:bg-blue-400 hover:text-black cursor-pointer text-white font-bold py-2 px-4 rounded"
                 >
                   Completed
                 </button>
@@ -299,34 +303,36 @@
         </div>
 
         <!-- hero right side  -->
-        <div class=" grid col-span-3 bg-white px-20 py-10 rounded-2xl">
+        <div class=" grid col-span-3 bg-white px-5 py-5 rounded-2xl">
           <div class="">
             <div class="">
               <div class="flex items-center justify-center gap-3">
-                <img class="text-center" src="assets/activity.png" alt="" />
-                <p class="text-xl text-center">Activity Log</p>
+                <img src="assets/activity.png" alt="" />
+                <p class="text-xl">Activity Log</p>
               </div>
               <div class="flex justify-center mt-4">
-                <button
+                <button id="clearHistory"
                   class="px-10 py-2 text-center rounded-xl text-white bg-blue-600"
                 >
+                
                   Clear History
                 </button>
               </div>
             </div>
 
             <!-- message -->
-            <div class="flex justify-center p-3 bg-[#F4F7FF] rounded-2xl mt-5">
-              <p>
-                You have Complete The Task Add <br />
-                Dark Mode at
-                <span>12:48:15 PM</span>
-              </p>
+            <div id="history" >
+              
             </div>
           </div>
         </div>
       </div>
       </div>
     </div>
+
+    <script src="scripts/date.js"></script>
+    <script src="scripts/changeColor.js"></script>
+    <script src="scripts/index.js"></script>
+
   </body>
 </html>
