@@ -60,5 +60,11 @@ clearHistory.addEventListener("click", function () {
   document.getElementById("history").innerHTML = "";
 });
 
+// connect blog.html 
+let blogBtn =  document.getElementById('blogBtn')
+
+blogBtn.addEventListener('click' ,function(){
+  window.location.href = "/html/blog.html";
+})
 
 

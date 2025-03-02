@@ -57,8 +57,8 @@
             >
           </div>
 
-          <div
-            class="flex items-center gap-7 rounded-2xl text-[24px] text-white py-6 px-10 col-span-4"
+          <div id="blogBtn"
+            class="flex items-center gap-7 rounded-2xl text-[24px] text-white py-6 px-10 col-span-4 cursor-pointer"
             style="
               background: linear-gradient(
                 130.7deg,
@@ -84,6 +84,8 @@
             >
           </div>
           </div>
+
+          <div class="border-b-2 border-blue-200 border-dotted"></div>
 
 
           <div class="mx-auto p-4 grid grid-cols-3 gap-4">
@@ -311,14 +313,17 @@
                 <p class="text-xl">Activity Log</p>
               </div>
               <div class="flex justify-center mt-4">
+                
                 <button id="clearHistory"
-                  class="px-10 py-2 text-center rounded-xl text-white bg-blue-600"
+                  class="px-10 py-2 text-center rounded-xl text-white bg-blue-600 cursor-pointer hover:bg-white border border-black hover:text-black"
                 >
                 
                   Clear History
                 </button>
+                
               </div>
             </div>
+            <div class="mt-4 mb-4 border-b-2 border-blue-300 border-dotted"></div>
 
             <!-- message -->
             <div id="history" >
